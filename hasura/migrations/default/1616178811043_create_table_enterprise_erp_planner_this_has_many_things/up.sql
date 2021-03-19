@@ -1,0 +1,2 @@
+CREATE TABLE "enterprise_erp_planner"."this_has_many_things" ("id" uuid NOT NULL DEFAULT gen_random_uuid(), "something" serial NOT NULL, "something_else" numeric NOT NULL DEFAULT random(), "stamp" timestamptz NOT NULL DEFAULT now(), "jsonstuff" jsonb NOT NULL DEFAULT jsonb_build_object(), "otherthings" boolean NOT NULL DEFAULT true, "datesampler" Date NOT NULL DEFAULT now(), "timesampler" timetz NOT NULL DEFAULT now(), PRIMARY KEY ("id") , UNIQUE ("id"));
+CREATE EXTENSION IF NOT EXISTS pgcrypto;

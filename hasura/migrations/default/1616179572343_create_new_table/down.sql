@@ -1,0 +1,1 @@
+drop table coreusersystem.another_important_thing;

@@ -1,0 +1,11 @@
+array_relationships:
+- name: relatable_things
+  using:
+    foreign_key_constraint_on:
+      column: many_things_id
+      table:
+        name: relatable_things
+        schema: enterprise_erp_planner
+table:
+  name: this_has_many_things
+  schema: enterprise_erp_planner
